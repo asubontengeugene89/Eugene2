@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nkoranman Senior High School | Official Site</title>
+    <style>
+        :root {
+            --primary-blue: #004a99;
+            --gold: #ffcc00;
+            --light-gray: #f4f4f4;
+        }
+
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; scroll-behavior: smooth; }
+        
+        /* Navigation */
+        nav { background: white; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--primary-blue); font-weight: bold; }
+        nav a:hover { color: var(--gold); }
+
+        /* Slideshow Container */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            height: 450px;
+            overflow: hidden;
+            background: #222;
+        }
+
+        .mySlides { display: none; height: 100%; }
+        .mySlides img { width: 100%; height: 100%; object-fit: cover; }
+
+        .caption {
+            position: absolute;
+            bottom: 40px;
+            background: rgba(0, 74, 153, 0.8);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .fade { animation: fadeEffect 1.5s; }
+        @keyframes fadeEffect { from {opacity: .4} to {opacity: 1} }
+
+        /* Content Sections */
+        .container { padding: 50px 20px; max-width: 1100px; margin: auto; }
+        .section-title { border-bottom: 3px solid var(--primary-blue); display: inline-block; margin-bottom: 25px; padding-bottom: 5px; color: var(--primary-blue); }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 5px solid var(--primary-blue); }
+
+        /* News Styling */
+        .news-item { border-left: 5px solid var(--gold); padding: 15px; margin-bottom: 20px; background: var(--light-gray); }
+
+        /* Contact Form */
+        input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
+        .btn { background: var(--primary-blue); color: white; padding: 12px 30px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .btn:hover { background: #003366; }
+
+        footer { background: #222; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#academics">Programmes</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="slideshow-container" id="home">
+    <div class="mySlides fade">
+        <img src="B.png" alt="Nkoranman SHS Gate">
+        <div class="caption">Welcome to Nkoranman SHS</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="z.jpeg" alt="Students Studying">
+        <div class="caption">Discipline and Hard Work</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="B.png" alt="School Campus">
+        <div class="caption">Excellence in the Bono Region</div>
+    </div>
+</div>
+
+<div class="container" id="about">
+    <h2 class="section-title">Headmaster's Welcome</h2>
+    <p style="font-style: italic; font-size: 1.1rem;">
+        "It is my pleasure to welcome you to our school's digital home. At Nkoranman SHS, we prioritize the academic and moral growth of our students to prepare them for a bright future."
+    </p>
+    <strong>— The Headmaster, Nkoranman SHS</strong>
+</div>
+
+<div class="container" id="academics" style="background: #fdfdfd;">
+    <h2 class="section-title">Academic Programmes</h2>
+    <div class="grid">
+        <div class="card"><h3>General Science</h3><p>Physics, Chemistry, Biology, Elective Maths.</p></div>
+        <div class="card"><h3>Business</h3><p>Accounting, Costing, Business Management, Economics.</p></div>
+        <div class="card"><h3>General Arts</h3><p>Government, History, Geography, CRS, Economics.</p></div>
+        <div class="card"><h3>Home Economics</h3><p>Management in Living, Food and Nutrition, Textiles.</p></div>
+    </div>`
+</div>
+
+<div class="container" id="news">
+    <h2 class="section-title">Latest News</h2>
+    <div class="news-item">
+        <h4>WASSCE 2026 Registration</h4>
+        <p>All final-year students are reminded to verify their data at the ICT lab.</p>
+    </div>
+    <div class="news-item">
+        <h4>Inter-House Sports Competition</h4>
+        <p>Join us this Friday for our annual athletics competition on the main field!</p>
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="grid">
+        <div>
+            <p><strong>Location:</strong> Seikwa, Tain District, Bono Region</p>
+            <p><strong>Email:</strong> info@nkoranmanshs.edu.gh</p>
+            <p><strong>Phone:</strong> +233 [Insert Number]</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Nkoranman Senior High School. All Rights Reserved.</p>
+    <p>Designed by Eugene Asubonteng</p>
+</footer>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 4000); // Image changes every 4 seconds
+    }
+</script>
+
+</body>
+</html>
